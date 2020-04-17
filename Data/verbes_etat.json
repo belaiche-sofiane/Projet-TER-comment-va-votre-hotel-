@@ -1,0 +1,8 @@
+{"etre" : ["est", "sont", "a été", "ont été", "avait été", "avaient été", "était", "étaient", "fut", "furent"],
+    "sembler" : ["semble", "semblent", "a semblé", "ont semblé", "semblait", "semblaient", "avait semblé", "avaient semblé", "sembla", "semblèrent"],
+    "devenir" : ["devient", "deviennent", "est devenu", "sont devenu", "devenait", "devenaient", "était devenu", "étaient devenu", "devint", "devinrent"],
+    "paraitre" : ["paraît", "paraissent", "a paru", "ont paru", "paraissait", "paraissaient", "avait paru", "avaient paru", "parut", "parurent"],
+    "avoir l'air" : ["a l'air", "ont l'air", "a eu l'air", "ont eu l'air", "avait l'air", "avaient l'air", "avait eu l'air", "avaient eu l'air", "eut l'air", "eurent l'air"],
+    "demeurer" : ["demeure", "demeurent", "a demeuré", "ont demeuré", "demeurait", "demeuraient", "avait demeuré", "avaient demeuré", "demeurai", "demeurèrent"],        
+    "rester" : ["reste", "restent", "est resté", "sont resté", "restait", "restaient", "était resté", "étaient resté", "resta", "restèrent"]                                  
+}

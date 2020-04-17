@@ -1,0 +1,216 @@
+{"hôtel" : [{"chambre":     [{"literie":         [{"matelas":     [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"drap":        [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"couette":     [],
+                                                   "synonymes":   ["couverture"]
+                                                  },
+                                                  {"taie":        [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"sommier":     [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"lit-bébé":    [],
+                                                   "synonymes":   ["lit-enfant"]
+                                                  }
+                                                 ],
+                              "synonymes" :      ["lit","couchage"]
+                             },
+                             {"salle-de-bain":   [{"lavabo":      [],
+                                                   "synonymes":   ["évier"]
+                                                  },
+                                                  {"douche":      [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"baignoire":   [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"bidet":       [],
+                                                   "synonymes":   []
+                                                  },
+                                                  {"glace":       [],
+                                                   "synonymes":   ["miroir"]
+                                                  },
+                                                  {"serviette":   [],
+                                                   "synonymes":   []
+                                                  }
+                                                 ],
+                              "synonymes" :      ["salle-d'eau", "salle"]
+                             },
+                             {"toilettes":       [],
+                              "synonymes":       ["WC"]
+                             },
+                             {"équipement":       [{"télévision": [{"télécommande": [],
+                                                                    "synonymes":    ["zapette"]
+                                                                   }
+                                                                  ],
+                                                    "synonymes":  ["télé","tele","tv"]
+                                                   },
+                                                   {"coffre":     [],
+                                                    "synonymes":  []
+                                                   },
+                                                   {"bar":        [],
+                                                    "synonymes":  ["frigidaire","frigo","réfrigérateur"]
+                                                   }
+                                                  ],
+                              "synonymes":        []
+                             },
+                             {"rangement":       [],
+                              "synonymes":       []
+                             },
+                             {"décoration":      [],
+                              "synonymes":       []
+                             },
+                             {"climatisation":   [],
+                              "synonymes":       ["air-conditionné","ventilation"]
+                             },
+                             {"terrasse":        [],
+                              "synonymes":       ["balcon"]
+                             },
+                             {"ménage":          [],
+                              "synonymes":       ["poussières","aspirateur", "balai"]
+                             }
+                            ],
+             "synonymes": ["chambrée", "suite"] 
+            },
+
+            {"restauration": [{"petit-déjeuner":  [{"café":         [],
+                                                    "synonymes":    []
+                                                   },
+                                                   {"thé":          [],
+                                                    "synonymes":    []
+                                                   },
+                                                   {"chocolat":     [],
+                                                    "synonymes":    ["cacao"]
+                                                   },
+                                                   {"viennoiserie": [],
+                                                    "synonymes":    []
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              },
+                              {"repas":           [{"buffet":       [],
+                                                    "synonymes":    []
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              },
+                              {"demi-pension":    [],
+                              "synonymes":        []
+                              },
+                              {"pension-complète": [],
+                               "synonymes":       []
+                              },
+                              {"boisson":         [{"eau":          [],
+                                                    "synonymes":    []
+                                                   },
+                                                   {"vin":          [],
+                                                    "synonymes":    []
+                                                   },
+                                                   {"bière":        [],
+                                                    "synonymes":    []
+                                                   },
+                                                   {"jus-de-fruit": [],
+                                                    "synonymes":    ["soda"]
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              },
+                              {"cuisinier":       [],
+                               "synonymes":       ["chef","cuistot"]
+                              },
+                              {"service":         [{"serveur":      [],
+                                                    "synonymes":    []
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              }
+                             ],
+             "synonymes": ["nourriture","cuisine"] 
+            },
+
+            {"installations":[{"spa":             [],
+                               "synonymes":       []
+                              },
+                              {"sauna":           [],
+                               "synonymes":       []
+                              },
+                              {"jacuzzi":         [],
+                               "synonymes":       []
+                              },
+                              {"salle de sport":  [],
+                               "synonymes":       ["gym"]
+                              },
+                              {"internet":        [],
+                               "synonymes":       ["wifi"]
+                              },
+                              {"escalier":        [],
+                               "synonymes":       []
+                              },
+                              {"ascenseur":       [],
+                               "synonymes":       []
+                              }
+                             ],
+             "synonymes":    []
+            },
+
+            {"personnel":    [{"accueil":         [],
+                               "synonymes":       ["réception"]
+                              },
+                              {"disponibilité":   [],
+                               "synonymes":       []
+                              }
+                             ],
+             "synonymes":    ["équipe","staff"] 
+            },
+
+            {"activités":    [{"animation":       [{"animateur":   [],
+                                                    "synonymes":   []
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              },
+                              {"soirée":          [],
+                               "synonymes":       ["discothèque"]                               
+                              },
+                              {"excursion":       [],
+                               "synonymes":       []
+                              }
+                             ],
+             "synonymes": [] 
+            },
+
+            {"extérieur":    [{"accès":           [{"accès-handicapé": [],
+                                                    "synonymes":   []
+                                                   }
+                                                  ],
+                               "synonymes":       []
+                              },
+                              {"parking":         [],
+                               "synonymes":       []
+                              },
+                              {"cadre":           [],
+                               "synonymes":       ["environnement","vue"]
+                              },
+                              {"jardin":          [],
+                               "synonymes":       ["parc","espaces verts"]
+                              },
+                              {"piscine":         [],
+                               "synonymes":       []
+                              },
+                              {"plage":           [],
+                               "synonymes":       ["bord-de-mer"]
+                              }
+                             ],
+             "synonymes": [] 
+            },
+            {
+             "bruit"    : [],
+             "synonymes": ["insonorisation","calme", "tranquillité"] 
+            }
+           ],
+ "synonymes" : ["établissement"]
+}
