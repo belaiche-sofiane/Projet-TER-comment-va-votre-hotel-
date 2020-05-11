@@ -1,0 +1,17 @@
+body{
+    background-image: url(https://www.promenades-en-mer.org/photo/produit/7/excursions_ajaccio___porticcio_couche_de_soleil_aux_iles_sanguinaires_decouvertes_naturelles_balades_en_mer_3820160726163437.jpg);
+    image-resolution: 50%;
+} 
+#critere {
+    height: 2em;
+    width: 40em;
+    margin-top: 9em;
+    background-color:white;
+   opacity:0.8;
+   border: 3px white solid;
+   text-align: center;
+}
+#n{
+    text-align: center;
+    
+} 

@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="{{ url_for('static', filename='css/styl.css')}}" rel="stylesheet" type="text/css" />
+    <title> Comment va votre hotel?</title>
+</head>
+
+
+<body>
+
+
+
+    <div id="n">
+
+        <form action="{{ url_for('recherche') }}" method="POST">
+            <h1> Comment va votre hotel ?</h1>
+            <input type="input" id="critere" name="critere" size="80px"
+                placeholder="Veuillez   saisir   votre   avis   ici   SVP" />
+            <input type="submit" value="Go" id="input">
+
+
+    </div>
+
+    <!-- <div id="texte">
+
+        <FONT size="10pt">
+          <p> Bienvenue dans notre application
+        </FONT>
+    </p>
+    <p> C'est une application de gestion et d'analyse des avis clients.
+      Notre solution vous accompagne, de la création de votre enquête, à l’analyse et à la communication voire la
+      viralisation des résultats. Cette application vous permet donc d’améliorer votre offre en continu, ou d’optimiser
+      votre climat social. Le tout, dans un but de croissance et d’augmentation de votre chiffre d’affaires.</p>
+ -->
+
+    <!-- </div> -->
+
+</body>
+
+</html>

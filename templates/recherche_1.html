@@ -11,17 +11,26 @@
 </head>
 
 <body>
+  {% if Noms_Resultats is defined and not none %}
   <div id="nn">
-    <h2> veuillez saisir un commentaire sur l'hotel ici </h2>
+
+    <!-- <h2> veuillez saisir un commentaire sur l'hotel ici </h2> -->
     <form action="{{ url_for('recherche') }}" method="POST">
-      Votre avis : <input type="input" id="critere" name="critere" size="80px" />
-      <input type="submit" value="Go">
+      <input type="input" id="critere" name="critere" size="80px"
+        placeholder=" Veuillez   saisir   votre   avis   ici   SVP" />
+      <input type="submit" value="Go" id="input">
+
   </div>
-  <!-- <button onclick="recherche()"> Va chercher </button> -->
+  {% endif %}
 
-  </form>
 
-  <!-- 
+
+
+  <div id="partieG">
+
+    </form>
+
+    <!-- 
   <p> <a href="#" onclick="fonc(this);"> la chambre est propre , spacieuse et organisée </a> </p>
 
   <p><a href="#" onclick="fonc(this);"> le personnel est sympathique et présent </a></p>
@@ -33,28 +42,30 @@
   <p><a href="#" onclick="fonc(this);"> la chambre est belle et le jardin est beau , la douche est propre , l'accueil
       est bien </a></p> -->
 
-  <body>
+
+    <p> <a href="http://localhost:5000/"> Accueil </a></p>
     {{tagList}}
+
     {% block i %}
     {% if i is defined and not none %}
-    <p> <b>hotel : </b> {{i}} point(s)</p>
+    <p> <b>Le score de la phrase : </b> {{i}} point(s)</p>
     {% endif %}
     {% endblock %}
     {% block sorties %}
     {% if Noms_Resultats is defined and not none %}
     {% for key, value in Noms_Resultats.items() %}
-    {% if value > 0 %}
-    <p> le nom est : <a style="color:green;" <b> {{key}} </a>, </b> le score est: <b>{{value}} </b> </p>
+    {% if value >= 0 %}
+    <p> Le nom est : <a style="color:green;" <b> {{key}} </a>, </b> le score est: <b>{{value}} </b> </p>
 
     {% else %}
-    <p> le nom est : <a style="color:red;" <b> {{key}} </a>, </b> le score est: <b>{{value}} </b> </p>
+    <p> Le nom est : <a style="color:red;" <b> {{key}} </a>, </b> le score est: <b>{{value}} </b> </p>
     {% endif %}
     {% endfor %}
     {% endif %}
     {% if dicADJ is defined and not none %}
     {% for key, value in dicADJ.items() %}
     {% for cle, valeur in value.items() %}
-    <p> l'adjectif est : <b> {{cle}} </b> et sa valeur est: <b>{{valeur}} </b> </p>
+    <p> L'adjectif est : <b> {{cle}} </b> et sa valeur est: <b>{{valeur}} </b> </p>
     {% endfor %}
     {% endfor %}
     {% endif %}
@@ -62,98 +73,130 @@
     {% if dicADV is defined and not none %}
     {% for keys, values in dicADV.items() %}
     {% for clef, valeurr in values.items() %}
-    <p> l'adverbe est : <b> {{clef}} </b> et sa valeur est: <b>{{valeurr}} </b> </p>
+    <p> L'adverbe est : <b> {{clef}} </b> et sa valeur est: <b>{{valeurr}} </b> </p>
     {% endfor %}
     {% endfor %}
     {% endif %}
-
-
-
-
-
-
-
 
     {% endblock %}
 
 
     {% block result %}
+    {% if Noms_Resultats is defined and not none %}
     <table>
       <tr>
         <td>
           <p style="color:blue" ; /> Adjectif
         </td>
         <td>
-          <p style="color:red" ; /> Adverbe </p>
+          <p style="color:red" ; /> Adverbe
+          </p>
           </p>
         </td>
         <td>
           <p style="color:green" ; /> Nom </p>
         </td>
+        <td>
+          <p style="color:orangered" ; /> Verbe </p>
+        </td>
       </tr>
     </table>
-    <div id='main'>
-      <table>
-        <tr>
-          {% for variable in ListeCriteres %}
-          {% if variable in ListeAdjectifs %}
 
-          <p>
-            <td>
-              <p style="color:blue" ;> {{ variable}}
-            </td>
-          </p>
-          </p>
-          {% elif variable in ListeAdverbs %}
-          <p>
-            <td>
-              <p style="color:red" ;> {{ variable}}
-            </td>
-          </p>
-          </p>
-          {%  elif variable in LesNoms %}
-          <p>
-            <td>
-              <p style="color:green" ;> {{ variable}}
-            </td>
-          </p>
-          </p>
-          {% else %}
-          <p>
-            <td>
-              <p style="color:black" ;> {{ variable}}
-            </td>
-          </p>
-          </p>
-          {% endif %}
-          {% endfor %}
-        </tr>
-      </table>
-    </div>
+    {% endif %}
+    <table>
+      <tr>
+        {% for variable in ListeCriteres %}
+        {% if variable in ListeAdjectifs %}
 
-
-
-    <hr />
-    {%   block res %}
-    <div id="mainn">
-
-      {% if mm is defined and mm is not none %}
-
-      <pre style="color:black" ;> {{mm}}</pre>
-
+        <p>
+          <td>
+            <p style="color:blue" ;> {{ variable}}
+          </td>
+        </p>
+        </p>
+        {% elif variable in ListeAdverbs %}
+        <p>
+          <td>
+            <p style="color:red" ;> {{ variable}}
+          </td>
+        </p>
+        </p>
+        {%  elif variable in LesNoms %}
+        <p>
+          <td>
+            <p style="color:green" ;> {{ variable}}
+          </td>
+        </p>
+        </p>
+        {%  elif variable in LesVerbes %}
+        <p>
+          <td>
+            <p style="color:orangered" ;> {{ variable}}
+          </td>
+        </p>
+        </p>
+        {% else %}
+        <p>
+          <td>
+            <p style="color:black" ;> {{ variable}}
+          </td>
+        </p>
+        </p>
+        {% endif %}
+        {% endfor %}
+      </tr>
+    </table>
+    {% if Noms_Resultats is defined and not none %}
+    <p> <b>Le score total de l'hotel est </b>:{{tot}}
+      {% if tot > 10 %}
+      <span>☆ </span>
       {% endif %}
-      {% endblock %}
-      {% endblock %}
-      <script>
-        fonc = function (element) {
-          input_elem = document.getElementById('critere');
-          input_elem.value = element.innerHTML;
-        }
-      </script>
+      {% if tot > 20 %}
+      <span>☆ </span>
+      {% endif %}
+
+      {% if tot > 30 %}
+      <span>☆ </span>
+      {% endif %}
+      {% if tot > 40 %}
+      <span>☆ </span>
+      {% endif %}
+      {% if tot > 50 %}
+      <span>☆ </span>
+      {% endif %}
+    </p>
+    <p> <b> Le nombre d'avis négatifs </b>: {{negatif}} , <progress id="negatif" min="0" max="700" color="red"
+        value="{{negativevalue}}">
+
+      </progress> {{neg}} points </p>
+    <p> <b> Le nombre d'avis positifs </b>: {{positif}}, <progress id="positif" max="700" value="{{pos}}">
+      </progress>{{pos}} points </p>
+
+    {% endif %}
+
+  </div>
 
 
+  <div id="partieD">
+    {%   block res %}
 
-  </body>
+
+    {% if fichier_ontologie is defined and fichier_ontologie is not none %}
+
+    <pre style="color:black" ;> {{fichier_ontologie}}</pre>
+
+    {% endif %}
+    {% endblock %}
+    {% endblock %}
+  </div>
+  <script>
+    fonc = function (element) {
+      input_elem = document.getElementById('critere');
+      input_elem.value = element.innerHTML;
+    }
+  </script>
+
+</body>
 
 
 </html>
